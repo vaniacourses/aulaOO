@@ -1,3 +1,8 @@
+package br.uff.ic.poo.venda;
+
+import br.uff.ic.poo.produto.Produto;
+import br.uff.ic.poo.cliente.Cliente;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -13,6 +18,10 @@ public class Pedido {
     Cliente cliente;
     Item[] itens = new Item[100];
     int qtdeItens = 0;
+    
+    public Pedido(Cliente cliente){
+        this.cliente = cliente;
+    }
     
     float getTotal(){
         float total = 0;

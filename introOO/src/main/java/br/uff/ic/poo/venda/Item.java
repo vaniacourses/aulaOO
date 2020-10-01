@@ -1,3 +1,7 @@
+package br.uff.ic.poo.venda;
+
+import br.uff.ic.poo.produto.Produto;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -8,9 +12,12 @@
  *
  * @author vania
  */
-public class Cliente {
+public class Item {
+    Produto produto;
+    int quantidade;
     
-    String nome;
-    String endereco;
+    float getSubTotal(){
+        return produto.getPreco() * quantidade;
+    }
     
 }
