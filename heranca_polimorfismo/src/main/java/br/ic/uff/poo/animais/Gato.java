@@ -11,6 +11,14 @@ package br.ic.uff.poo.animais;
  */
 public class Gato extends Felino {
     
+    
+    public Gato(){
+        super();
+    }        
+    public Gato(String imagem, String comida, int nivelFome, int localizacaoX, int localizacaoY){
+        super(imagem, comida, nivelFome, localizacaoX, localizacaoY);
+    }    
+
     @Override
     public void fazerRuido(){
         System.out.println("Miau");

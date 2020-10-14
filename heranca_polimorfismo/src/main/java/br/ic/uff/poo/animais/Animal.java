@@ -17,16 +17,37 @@ public class Animal {
     protected int localizacaoX;
     protected int localizacaoY;
     
+    
+    public Animal(){
+        this("", "", 0, 0, 0);
+    }    
+    
+    public Animal(String imagem, String comida, int nivelFome, int localizacaoX, int localizacaoY){
+        this.imagem = imagem;
+        this.comida = comida;
+        this.nivelFome = nivelFome;
+        this.localizacaoX = localizacaoX;
+        this.localizacaoY = localizacaoY;
+    }    
+    
+    
     public void fazerRuido(){
         System.out.println("Ruído de um animal genérico");
     }
-  
+
+    public void comer(){
+        System.out.println("Estou comendo ");
+    }
+        
     
     public void comer(String comida){
         System.out.println("Estou comendo "+comida);
     }
     
-   
+    public void comer(String comida, int qtde){
+        System.out.println("Estou comendo "+qtde+ " de " +comida);
+    }
+    
     public void dormir(){
         System.out.println("zzZZzzZZzzz");
     }
