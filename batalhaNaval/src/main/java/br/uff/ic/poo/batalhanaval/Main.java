@@ -20,8 +20,8 @@ public class Main {
         while(!bn.ehFimDoJogo()){
             Scanner teclado = new Scanner(System.in);
             System.out.println("Digite um número: ");
-            int palpite = teclado.nextInt();
-            bn.verificaPalpite(palpite); 
+            String palpite = teclado.next();
+            bn.verificaPalpite(Integer.parseInt(palpite)); 
             bn.imprimeBatalha();
         }
     }

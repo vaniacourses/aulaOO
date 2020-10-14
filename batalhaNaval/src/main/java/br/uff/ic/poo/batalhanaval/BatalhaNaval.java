@@ -5,6 +5,7 @@
  */
 package br.uff.ic.poo.batalhanaval;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 /**
@@ -14,15 +15,15 @@ import java.util.Random;
 public class BatalhaNaval {
     
     private char[] batalha = new char[10];
-    private int[] localizacao = new int[3];
+    private ArrayList<Integer> localizacao = new ArrayList<Integer>();
     private int numAcertos = 0;
     
     public BatalhaNaval(){
         Random r = new Random();
         int posInicial = r.nextInt(8);
-        localizacao[0] = posInicial;
-        localizacao[0] = posInicial + 1;
-        localizacao[0] = posInicial + 2;
+        localizacao.add(posInicial);
+        localizacao.add(posInicial+1);
+        localizacao.add(posInicial+2);
 
         System.out.println(posInicial);
         this.inicializaBatalha();
@@ -34,19 +35,18 @@ public class BatalhaNaval {
         }
     }
     
-    public void verificaPalpite(int palpite){
-        for (int local: this.localizacao){
-            if (palpite == local){
-                this.batalha[palpite] = 'X';
-                numAcertos++;    
-                break;
-            }
-           else{
-              this.batalha[palpite] = '~';  
-            }            
+    public void verificaPalpite(Integer palpite){
+        if (localizacao.contains(palpite)) {
+            this.batalha[palpite] = 'X';
+            numAcertos++; 
+            localizacao.remove(palpite);
         }
+        else{
+          this.batalha[palpite] = '~';  
+        }
+
     }
-          
+    
     public void imprimeBatalha(){
         for (char celula: this.batalha){
             System.out.print(" | "+celula);
