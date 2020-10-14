@@ -15,23 +15,43 @@ public class BoloRetangular {
     private float peso;
     private String sabor;
     private String cobertura;
-    
+    private static int numBolos = 0;
+    private static final int TEMPO_FORNO = 40;
+
+        
     public BoloRetangular(float peso, String sabor, String cobertura){
         this.peso = peso;
         this.sabor = sabor;
         this.cobertura = cobertura;
+        numBolos++;
     }
     
     public BoloRetangular(String sabor, String cobertura){
         this.sabor = sabor;
         this.cobertura = cobertura;
         this.peso = 0;
+        numBolos++;
     }
     
+       
     public BoloRetangular(){
-        
+        numBolos++;
     }
   
+    public static int getNumBolos(){
+        return numBolos;
+    }
+    
+    public void assar(int tempo){
+        
+        if (Math.abs(tempo * Math.PI) < TEMPO_FORNO){
+            System.out.println("Continue assando");
+        }
+        else {
+            System.out.println("Está pronto");
+        }
+    }
+
  
     void decorar(){
         System.out.println("Bolo decorado");        
