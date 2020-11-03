@@ -9,7 +9,7 @@ package br.ic.uff.poo.animais;
  *
  * @author vania
  */
-public class Ave extends Animal{
+public abstract class Ave extends Animal{
     
     
     @Override

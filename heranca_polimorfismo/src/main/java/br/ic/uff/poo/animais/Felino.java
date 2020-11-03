@@ -9,7 +9,7 @@ package br.ic.uff.poo.animais;
  *
  * @author vania
  */
-public class Felino extends Animal{
+public abstract class Felino extends Animal{
     
     public Felino(){
         super();

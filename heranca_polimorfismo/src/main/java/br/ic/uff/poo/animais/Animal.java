@@ -9,7 +9,7 @@ package br.ic.uff.poo.animais;
  *
  * @author vania
  */
-public class Animal {
+public abstract class Animal {
     
     protected String imagem;
     protected String comida;
@@ -31,9 +31,7 @@ public class Animal {
     }    
     
     
-    public void fazerRuido(){
-        System.out.println("Ruído de um animal genérico");
-    }
+    public abstract void fazerRuido();
 
     public void comer(){
         System.out.println("Estou comendo ");

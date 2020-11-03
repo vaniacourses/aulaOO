@@ -9,13 +9,24 @@ package br.ic.uff.poo.animais;
  *
  * @author vania
  */
-public class Cachorro extends Animal{
+public class Cachorro extends Animal implements Domesticavel{
+
+    @Override
+    public void fazerRuido() {
+        System.out.println("au au");
+    }
+
+    @Override
+    public void brincar() {
+        System.out.println("Cachorro está brincando");
+    }
+
+    @Override
+    public void serAmigavel() {
+        System.out.println("Cachorro quer carinho");
+    }
 
     
-    @Override
-    public void fazerRuido(){
-        System.out.println("au au");
-    }      
     
   
 }

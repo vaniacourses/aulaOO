@@ -9,7 +9,7 @@ package br.uff.ic.poo.herancaopoli;
  *
  * @author vania
  */
-public class Pessoa {
+public abstract class Pessoa {
     
     protected String nome;
     protected String endereco;

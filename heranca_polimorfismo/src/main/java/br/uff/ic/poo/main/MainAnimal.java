@@ -34,7 +34,7 @@ public class MainAnimal {
             animal.comer("carne");
         }
         
-        Animal a = new Animal();
+        Animal a = new Cachorro();
         a.comer();
         a.comer("carne");
         a.comer("milho", 3);

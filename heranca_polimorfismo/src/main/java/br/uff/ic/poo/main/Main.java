@@ -27,10 +27,10 @@ public class Main {
         funcionario.atualizarContato("Rua dos Funcionario", "3456-5678", "funcionario@ic.uff.br");
         funcionario.imprimePessoa();
         
-        Pessoa pessoa = new Pessoa();
+        /*Pessoa pessoa = new Pessoa();
         pessoa.setNome("Maria");
         pessoa.atualizarContato("End Maria", "3456-4534", "maria@ic.uff.br");
-        pessoa.imprimePessoa();
+        pessoa.imprimePessoa();*/
 
    }
     

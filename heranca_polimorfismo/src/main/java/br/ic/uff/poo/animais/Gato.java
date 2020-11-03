@@ -9,7 +9,7 @@ package br.ic.uff.poo.animais;
  *
  * @author vania
  */
-public class Gato extends Felino {
+public class Gato extends Felino implements Domesticavel {
     
     
     public Gato(){
@@ -23,4 +23,14 @@ public class Gato extends Felino {
     public void fazerRuido(){
         System.out.println("Miau");
     }        
+
+    @Override
+    public void brincar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void serAmigavel() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
