@@ -3,16 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.ic.uff.poo.animais;
+package br.ic.uff.poo.tiposclasses;
 
 /**
  *
  * @author vania
  */
-public class Galinha extends Ave{
-
-    @Override
-    public void fazerRuido(){
-        System.out.println("co co ri có");
-    }    
+public interface Interface {
+    
+    public void getDescricao();    
 }
