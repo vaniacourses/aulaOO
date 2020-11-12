@@ -3,13 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.ic.uff.poo.tiposclasses;
+package aulaoo.tratamentoexcecao;
 
 /**
  *
  * @author vania
  */
-public interface Interface {
+public class MinhaExcecaoNaoVerificadaException extends RuntimeException{
     
-    public void getDescricao();    
+    public MinhaExcecaoNaoVerificadaException(String msg){
+        super(msg);
+    }
+    
 }
